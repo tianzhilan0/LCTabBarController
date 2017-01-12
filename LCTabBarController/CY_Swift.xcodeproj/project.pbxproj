@@ -11,7 +11,6 @@
 		4B436EA61E248E1400698D1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B436EA41E248E1400698D1F /* Main.storyboard */; };
 		4B436EA81E248E1400698D1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B436EA71E248E1400698D1F /* Assets.xcassets */; };
 		4B436EAB1E248E1400698D1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B436EA91E248E1400698D1F /* LaunchScreen.storyboard */; };
-		4B436EB31E248E9200698D1F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B436EB21E248E9200698D1F /* MainViewController.swift */; };
 		4B436EB71E24944D00698D1F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B436EB61E24944D00698D1F /* LoginViewController.swift */; };
 		4B436EB91E24974500698D1F /* NotificationMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B436EB81E24974500698D1F /* NotificationMacro.swift */; };
 		4B436EBB1E24BBF600698D1F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B436EBA1E24BBF600698D1F /* HomeViewController.swift */; };
@@ -22,6 +21,7 @@
 		4B436ED91E24C39A00698D1F /* LCMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B436ED81E24C39A00698D1F /* LCMacro.swift */; };
 		4B436EDB1E25D1BA00698D1F /* login_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B436EDA1E25D1B900698D1F /* login_back@2x.png */; };
 		4B436EDD1E26191600698D1F /* LCTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B436EDC1E26191600698D1F /* LCTabBar.swift */; };
+		4B785FE01E2775A4004EA72C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B785FDF1E2775A4004EA72C /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,6 @@
 		4B436EA71E248E1400698D1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B436EAA1E248E1400698D1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B436EAC1E248E1400698D1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B436EB21E248E9200698D1F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4B436EB61E24944D00698D1F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4B436EB81E24974500698D1F /* NotificationMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationMacro.swift; sourceTree = "<group>"; };
 		4B436EBA1E24BBF600698D1F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		4B436ED81E24C39A00698D1F /* LCMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCMacro.swift; sourceTree = "<group>"; };
 		4B436EDA1E25D1B900698D1F /* login_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_back@2x.png"; sourceTree = "<group>"; };
 		4B436EDC1E26191600698D1F /* LCTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCTabBar.swift; sourceTree = "<group>"; };
+		4B785FDF1E2775A4004EA72C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				4B436EA01E248E1400698D1F /* AppDelegate.swift */,
-				4B436EB21E248E9200698D1F /* MainViewController.swift */,
 				4B436EB61E24944D00698D1F /* LoginViewController.swift */,
+				4B785FDF1E2775A4004EA72C /* BaseViewController.swift */,
 				4B436EBA1E24BBF600698D1F /* HomeViewController.swift */,
 				4B436EBE1E24BC4000698D1F /* MessageViewController.swift */,
 				4B436EBC1E24BC2700698D1F /* ContactViewController.swift */,
@@ -170,9 +170,9 @@
 			files = (
 				4B436EBB1E24BBF600698D1F /* HomeViewController.swift in Sources */,
 				4B436EB71E24944D00698D1F /* LoginViewController.swift in Sources */,
+				4B785FE01E2775A4004EA72C /* BaseViewController.swift in Sources */,
 				4B436EDD1E26191600698D1F /* LCTabBar.swift in Sources */,
 				4B436EC31E24BC7300698D1F /* MineViewController.swift in Sources */,
-				4B436EB31E248E9200698D1F /* MainViewController.swift in Sources */,
 				4B436EA11E248E1400698D1F /* AppDelegate.swift in Sources */,
 				4B436EB91E24974500698D1F /* NotificationMacro.swift in Sources */,
 				4B436EBD1E24BC2700698D1F /* ContactViewController.swift in Sources */,
@@ -342,6 +342,7 @@
 				4B436EB11E248E1400698D1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

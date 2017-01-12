@@ -9,6 +9,15 @@
 import UIKit
 
 
+/// 导航背景色
+private let NavigationBackColor = UIColor.white
+
+/// 导航字体颜色
+private let NavigationTitleColor = UIColor.black
+
+/// 导航字号大小
+private let NavigationTitleFont:CGFloat = 20.0
+
 /// tabbar背景色
 private let TabBarColor = UIColor.white
 
@@ -93,7 +102,6 @@ open class LCTabBar: UITabBarController {
         for (index, className) in self.viewControllerArray.enumerated() {
             
             guard let childVcClass = NSClassFromString(nameSpage + "." + className) else {
-                print(nameSpage + "." + className)
                 print("没有获取到对应的class")
                 return
             }
@@ -105,8 +113,12 @@ open class LCTabBar: UITabBarController {
             let vc = childVcType.init()
             
             vc.title = self.titleArray[index]
-            let nav = UINavigationController(rootViewController:vc)
-            naviArray.append(nav)
+            let navi = UINavigationController(rootViewController:vc)
+            //背景色
+            navi.navigationBar.barTintColor = NavigationBackColor
+            //标题颜色，大小
+            navi.navigationBar.titleTextAttributes = [NSFontAttributeName:UIFont.systemFont(ofSize: NavigationTitleFont),NSForegroundColorAttributeName:NavigationTitleColor]
+            naviArray.append(navi)
         }
         
         viewControllers  = naviArray;

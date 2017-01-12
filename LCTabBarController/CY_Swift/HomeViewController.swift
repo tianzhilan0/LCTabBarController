@@ -8,14 +8,33 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationItem.title = "首页"
         self.view.backgroundColor = ColorRandom()
+        
+        
+        self.view.addSubview(button)
+        
     }
+    fileprivate lazy var button:UIButton = {
+        let button = UIButton(type: .custom)
+        button.frame = CGRect(x: 50, y: 100, width: self.view.frame.size.width - 100, height: 50)
+        button.backgroundColor = UIColor.blue
+        button.addTarget(self, action: #selector(nextViewController), for: .touchUpInside)
+        return button
+    }()
+    
+    @objc fileprivate func nextViewController(){
+        let viewController = ServiceViewController()
+        
+        viewController.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

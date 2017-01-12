@@ -1,19 +1,19 @@
 //
-//  MessageViewController.swift
+//  BaseViewController.swift
 //  CY_Swift
 //
-//  Created by LC on 17/1/10.
+//  Created by LC on 17/1/12.
 //  Copyright © 2017年 LC. All rights reserved.
 //
 
 import UIKit
 
-class MessageViewController: BaseViewController {
+class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.green
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "返回", style: .done, target: nil, action: nil)
     }
 
     override func didReceiveMemoryWarning() {
